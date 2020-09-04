@@ -67,8 +67,8 @@ else
   fi
 
   # install leiningen jar
-  LEIN1_JAR_URL="http://buildpacks.drycc.cc/jvm/leiningen-$LEIN_VERSION-standalone.jar"
-  LEIN2_JAR_URL="http://buildpacks.drycc.cc/github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip"
+  LEIN1_JAR_URL="https://buildpacks.drycc.cc/jvm/leiningen-$LEIN_VERSION-standalone.jar"
+  LEIN2_JAR_URL="https://buildpacks.drycc.cc/github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip"
   LEIN_JAR_CACHE_PATH="$CACHE_DIR/leiningen-$LEIN_VERSION-standalone.jar"
   LEIN_JAR_SLUG_PATH="$BUILD_DIR/.lein/leiningen-$LEIN_VERSION-standalone.jar"
 

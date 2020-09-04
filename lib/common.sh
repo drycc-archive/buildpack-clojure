@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export BUILDPACK_STDLIB_URL="http://buildpacks.drycc.cc/common/stdlib/stdlib.sh"
+export BUILDPACK_STDLIB_URL="https://buildpacks.drycc.cc/common/stdlib/stdlib.sh"
 
 cache_copy() {
   rel_dir=$1
@@ -57,7 +57,7 @@ install_jdk() {
   local install_dir=${1}
 
   let start=$(nowms)
-  JVM_COMMON_BUILDPACK=${JVM_COMMON_BUILDPACK:-http://buildpacks.drycc.cc/common/jvm/jvm.tgz}
+  JVM_COMMON_BUILDPACK=${JVM_COMMON_BUILDPACK:-https://buildpacks.drycc.cc/common/jvm/jvm.tgz}
   mkdir -p /tmp/jvm-common
   curl --retry 3 --silent --location $JVM_COMMON_BUILDPACK | tar xzm -C /tmp/jvm-common --strip-components=1
   source /tmp/jvm-common/bin/util
